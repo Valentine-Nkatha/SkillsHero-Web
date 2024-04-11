@@ -1,0 +1,27 @@
+#Microsoft{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+}
+#buttons{
+    border-radius: 40%;
+    background-color: white;
+    color: red;
+
+}
+#button{
+border-radius: 40%;
+background-color: red;
+color: white;
+}
+#Button{
+    background-color: white;
+    border-radius: 40%;
+
+}
+#Buttons{
+    background-color: red;
+    color: white;
+}
