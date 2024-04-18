@@ -1,6 +1,8 @@
 #Microsoft {
   display: flex;
   justify-content: space-around;
+  gap: 10%;
+  padding-top: 15%;
 }
 #nav a {
   text-decoration: none;
@@ -36,6 +38,9 @@
   color: white;
   border-radius: 40px;
   padding: 5%;
+  position: absolute;
+  right: 5px;
+  top: 5px;
 }
 #Upgrade {
   display: flex;
@@ -47,6 +52,8 @@
 }
 #monthly {
    display: flex;
+   gap: 100px;
+   padding-top: 10%;
   
 }
 .hero{
@@ -58,7 +65,9 @@
 }
 #Subscription{
   display: flex;
-  margin-right: 30px; 
+  margin-right: 30px;
+ 
+
 }
 #Money{
    display: flex; 
@@ -66,7 +75,7 @@
 }
 body{
   background-color:white;
-  font-size: 30px;
+  
   
   
 }
@@ -80,14 +89,41 @@ body{
   padding: 10px;
   
 } */
-#text{
-  padding: 5%;
-  width: 190px;
+#input{
+  
+padding: 5%;
+  padding-right: 40px;
 }
 #Explore{
-  transform: translate(80,-1);
+  position: relative;
 }
-@media screen and (min-width: 350px) and (max-width: 700px) {
+#upgrade{
+  font-size: large;
+}
+.navy{
+  color: navy;
+}
+.big{
+  font-size: x-large;
+}
+#Image1{
+  height: 25px;
+
+}
+#Image2{
+  height: 55px;
+}
+#Image3{
+  height: 25px;
+}
+#tick{
+  height: 10px;
+}
+#degree{
+  height: 25px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 350px) and (max-width: 550px) {
   #nav {
     display: flex;
     flex-wrap: wrap;
@@ -105,5 +141,54 @@ body{
   #monthly {
     display: flex;
   }
+  #Microsoft{
+    display: flex;
+  flex-wrap: wrap;
+  }
 }
+@media screen and(min-width:560) and (max-width:760px){
+  #nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  #Upgrade {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #image {
+    width: 300px;
+    object-fit: cover;
+  }
+
+  #monthly {
+    display: flex;
+  }
+  #Microsoft{
+    display: flex;
+  flex-wrap: wrap;
+  }
+}
+@media screen and(min-width:770px) and(max-width:970px){
+  #nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #Upgrade {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #image {
+    width: 300px;
+    object-fit: cover;
+  }
+
+  #monthly {
+    display: flex;
+  }
+  #Microsoft{
+    display: flex;
+  flex-wrap: wrap;
+  }
+}
