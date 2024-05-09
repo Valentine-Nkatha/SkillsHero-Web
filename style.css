@@ -4,11 +4,18 @@
   gap: 10%;
   padding-top: 15%;
 }
-#nav a {
+/* #nav a {
+  text-decoration: none;
+  color: black;
+} */
+#nav a{
+  display: flex;
+  flex-direction:row;
+  list-style-type: none;
   text-decoration: none;
   color: black;
 }
-#nav {
+#nav{
   display: flex;
   justify-content: space-around;
 }
@@ -39,8 +46,8 @@
   border-radius: 40px;
   padding: 5%;
   position: absolute;
-  right: 5px;
-  top: 5px;
+  margin-left: -90px;
+
 }
 #Upgrade {
   display: flex;
@@ -93,6 +100,8 @@ body{
   
 padding: 5%;
   padding-right: 40px;
+  border-radius: 50px;
+  width: 200px;
 }
 #Explore{
   position: relative;
@@ -100,7 +109,7 @@ padding: 5%;
 #upgrade{
   font-size: large;
 }
-.navy{
+.colornavy{
   color: navy;
 }
 .big{
@@ -117,13 +126,16 @@ padding: 5%;
   height: 25px;
 }
 #tick{
-  height: 10px;
+  height: 30px;
 }
 #degree{
-  height: 25px;
+  height: 45px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 350px) and (max-width: 550px) {
+#Body{
+  font-size: xx-large;
+}
+@media screen and (min-width: 270px) and (max-width: 470px) {
   #nav {
     display: flex;
     flex-wrap: wrap;
@@ -144,9 +156,42 @@ padding: 5%;
   #Microsoft{
     display: flex;
   flex-wrap: wrap;
+  }
+  #Body{
+    font-size: smaller;
+  }
+  
+}
+@media screen and(min-width:470px) and (max-width:670px){
+  #nav {
+    display: flex;
+     flex-wrap: wrap; 
+    
+    
+    
+  }
+
+  #Upgrade {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #image {
+    width: 300px;
+    object-fit: cover;
+  }
+
+  #monthly {
+    display: flex;
+  }
+  #Microsoft{
+    display: flex;
+  flex-wrap: wrap;
+  }
+  #Body{
+    font-size: smaller;
   }
 }
-@media screen and(min-width:560) and (max-width:760px){
+@media screen and(min-width:670px) and(max-width:870px){
   #nav {
     display: flex;
     flex-wrap: wrap;
@@ -167,9 +212,12 @@ padding: 5%;
   #Microsoft{
     display: flex;
   flex-wrap: wrap;
+  }
+  #Body{
+    font-size: smaller;
   }
 }
-@media screen and(min-width:770px) and(max-width:970px){
+@media screen and(min-width:870px) and(max-width:1070px){
   #nav {
     display: flex;
     flex-wrap: wrap;
@@ -190,5 +238,61 @@ padding: 5%;
   #Microsoft{
     display: flex;
   flex-wrap: wrap;
+  }
+  #Body{
+    font-size: smaller;
+  }
+}
+@media screen and(min-width:1070px) and(max-width:1270px){
+  #nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #Upgrade {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #image {
+    width: 300px;
+    object-fit: cover;
+  }
+
+  #monthly {
+    display: flex;
+  }
+  #Microsoft{
+    display: flex;
+  flex-wrap: wrap;
+  }
+  #Body{
+    font-size: smaller;
+  }
+
+}
+@media screen and(min-width:1270px) and(max-width:1470px){
+  #nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #Upgrade {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #image {
+    width: 300px;
+    object-fit: cover;
+  }
+
+  #monthly {
+    display: flex;
+  }
+  #Microsoft{
+    display: flex;
+  flex-wrap: wrap;
+  }
+  #Body{
+    font-size: smaller;
   }
 }
